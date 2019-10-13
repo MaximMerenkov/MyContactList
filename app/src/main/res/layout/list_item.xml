@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/system_blue"
+        android:text="Contact Name"
+        android:textSize="@dimen/text_size_large" />
+
+
+    <TextView
+        android:id="@+id/textStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContactName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="4dp"
+        android:text="Street" />
+
+
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textStreet"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/textStreet"
+        android:layout_toRightOf="@+id/textStreet"
+        android:text="City" />
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textCity"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textCity"
+        android:layout_toRightOf="@+id/textCity"
+        android:text="State" />
+
+    <TextView
+        android:id="@+id/textZipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textState"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textState"
+        android:layout_toRightOf="@+id/textState"
+        android:text="Zip" />
+
+    <TextView
+        android:id="@+id/textH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textZipcode"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Home: "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textH"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/textH"
+        android:layout_toRightOf="@+id/textH"
+        android:text="Phone Number" />
+
+    <TextView
+        android:id="@+id/Cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPhoneNumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Cell: "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textCellNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Cell"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/Cell"
+        android:layout_toRightOf="@+id/Cell"
+        android:text="Cell Number" />
+
+    <Button
+        android:id="@+id/buttonDeleteContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/system_red"
+        android:background="@color/system_transparent"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignTop="@+id/textContactName"
+        android:layout_alignBottom="@+id/textStreet"
+        android:text="Delete" />
+
+
+</RelativeLayout>
